@@ -1,0 +1,20 @@
+.menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  background-color: var(--color-pri);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.nombre_logo {
+  font-size: 2rem;
+  color: var(--color-ter);
+  font-style: italic;
+  font-weight: 700;
+}
+
+.menu__list__item a.active {
+  color: var(--color-ter);
+}

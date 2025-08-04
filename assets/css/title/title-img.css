@@ -1,0 +1,7 @@
+.title__profile {
+  width: 30rem;
+  border-radius: 50%;
+  border: 0.4rem solid;
+  border-color: var(--color-ter);
+  padding: 1rem;
+}

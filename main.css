@@ -1,0 +1,46 @@
+:root {
+  --color-pri: #1f1f1f;
+  --color-sec: #e6e6e6;
+  --color-ter: #47b15b;
+}
+
+* {
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1;
+}
+
+ol,
+ul,
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: var(--cor-de-link);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+p,
+input,
+button,
+textarea {
+  border: none;
+  outline: none;
+}
+
+p {
+  line-height: 1.5rem;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 95px;
+}

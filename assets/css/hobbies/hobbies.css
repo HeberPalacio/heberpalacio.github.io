@@ -1,0 +1,16 @@
+.hobbies {
+  padding: 3rem 5rem;
+  background-color: var(--color-pri);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.hobbies__title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 2rem;
+  color: var(--color-ter);
+  font-style: italic;
+}

@@ -1,0 +1,577 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Cargar la librería Font Awesome para los íconos -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+
+    <!-- Preconexión a Google Fonts para mejorar el rendimiento -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <!-- Cargar fuente personalizada: Montserrat -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Archivo principal de estilos -->
+    <link rel="stylesheet" href="main.css" />
+
+    <!-- Estilos específicos organizados por carpetas y módulos para mantener orden -->
+    <link rel="stylesheet" href="./assets/css/about/about.css" />
+    <link rel="stylesheet" href="./assets/css/about/about__container.css" />
+    <link rel="stylesheet" href="./assets/css/academic/academic.css" />
+    <link rel="stylesheet" href="./assets/css/academic/academicCourses.css" />
+    <link rel="stylesheet" href="./assets/css/cita/cita.css" />
+    <link rel="stylesheet" href="./assets/css/exp/exp.css" />
+    <link rel="stylesheet" href="./assets/css/exp/exp__box.css" />
+    <link rel="stylesheet" href="./assets/css/footer/footer.css" />
+    <link rel="stylesheet" href="./assets/css/hobbies/hobbies.css" />
+    <link rel="stylesheet" href="./assets/css/hobbies/hobbies__line.css" />
+    <link rel="stylesheet" href="./assets/css/menu/menu-header.css" />
+    <link rel="stylesheet" href="./assets/css/menu/menu-nav.css" />
+    <link rel="stylesheet" href="./assets/css/menu/menu.css" />
+    <link rel="stylesheet" href="./assets/css/skills/skills.css" />
+    <link rel="stylesheet" href="./assets/css/skills/skills__line.css" />
+    <link rel="stylesheet" href="./assets/css/title/title.css" />
+    <link rel="stylesheet" href="./assets/css/title/title-img.css" />
+    <link rel="stylesheet" href="./assets/css/title/title__container.css" />
+    <link rel="stylesheet" href="./assets/css/about/about__img.css" />
+    <link rel="stylesheet" href="./assets/css/responsive/responsive.css" />
+
+    <title>Mi Portafolio</title>
+  </head>
+  <body>
+    <div class="todo">
+      <!-- Menú de navegación principal que incluye logo y enlaces -->
+      <section class="menu">
+        <!-- Cabecera del menú: aquí pongo el logo o nombre y el botón hamburguesa para móviles -->
+        <header class="menu__header">
+          <!-- Botón hamburguesa para abrir/cerrar menú en móvil -->
+          <button class="menu-toggle" aria-label="Abrir menú">
+            <span class="menu-toggle__bar"></span>
+            <span class="menu-toggle__bar"></span>
+            <span class="menu-toggle__bar"></span>
+          </button>
+          <!-- Logo o nombre del portafolio -->
+          <a href="#" class="nombre_logo">Heber Palacio</a>
+        </header>
+
+        <!-- Navegación principal con enlaces a cada sección del portafolio -->
+        <nav class="menu-nav">
+          <ul class="menu__list">
+            <!-- Cada ítem apunta a un id dentro de la misma página -->
+            <li class="menu__list__item"><a href="#sobre-mi">Sobre mi</a></li>
+            <li class="menu__list__item"><a href="#skills">Skills</a></li>
+            <li class="menu__list__item"><a href="#hobbies">Hobbies</a></li>
+            <li class="menu__list__item"><a href="#formacion">Formación</a></li>
+            <li class="menu__list__item"><a href="#xp">Proyectos</a></li>
+          </ul>
+        </nav>
+      </section>
+
+      <!-- Sección principal de bienvenida o hero con foto y bio -->
+      <section class="title">
+        <div class="title__div">
+          <!-- Imagen de perfil, importante que la ruta sea correcta y la imagen optimizada -->
+          <img class="title__profile" src="assets/foto_de_perfil.webp" />
+          <div class="title__container">
+            <!-- Breve descripción profesional o rol -->
+            <h2 class="title__bio">Desarrollador <span>Web</span></h2>
+
+            <!-- Subtítulo con descripción más extensa y motivacional -->
+            <h3 class="title__subsection">
+              Estudiante autodidacta con pasión por el aprendizaje constante y
+              la mejora continua. Me enfoco en desarrollar soluciones sólidas y
+              creativas, confiando en mi capacidad para enfrentar nuevos
+              desafíos con determinación y compromiso.
+            </h3>
+
+            <!-- Redes sociales con íconos y tooltips para contacto -->
+            <ul class="title__network">
+              <li class="social-icon github" id="github">
+                <a href="https://github.com/HeberPalacio" target="_blank">
+                  <img src="assets/github-icon.png" alt="GitHub" />
+                  <span class="tooltip">GitHub</span>
+                </a>
+              </li>
+              <li class="social-icon linkedin" id="linkedin">
+                <a
+                  href="https://www.linkedin.com/in/heber-palacio-267b76300/"
+                  target="_blank"
+                >
+                  <img src="assets/linkedin-icon.png" alt="LinkedIn" />
+                  <span class="tooltip">LinkedIn</span>
+                </a>
+              </li>
+              <li class="social-icon instagram" id="instagram">
+                <a
+                  href="https://www.instagram.com/variantedeheber/"
+                  target="_blank"
+                >
+                  <img src="assets/instagram-icon.png" alt="Instagram" />
+                  <span class="tooltip">Instagram</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- Sección “Sobre mí”: presentación personal y profesional -->
+      <section class="about" id="sobre-mi">
+        <!-- Título para destacar la sección -->
+        <h3 class="about__title">¿Por qué contratarme?</h3>
+
+        <div class="about__container">
+          <!-- Imagen relacionada con la sección -->
+          <img
+            class="about-me-image"
+            src="assets/about-me-image.webp"
+            alt="Imagen de una notebook"
+          />
+
+          <!-- Texto explicativo que resalta mis cualidades y compromiso -->
+          <p class="about__paragraph">
+            "Combino iniciativa, compromiso y una fuerte ética de trabajo con
+            una mentalidad orientada a resolver problemas reales y aportar
+            soluciones que marquen una diferencia. No solo aprendo rápido, sino
+            que tengo la capacidad de adaptar esos conocimientos a distintos
+            contextos, buscando siempre la eficiencia y la mejora continua. Me
+            involucro de lleno en cada proyecto, entendiendo las necesidades del
+            equipo y del cliente, y actuando con responsabilidad y proactividad
+            desde el primer momento. Si estás buscando a alguien que no se
+            detiene ante los desafíos, que aporta ideas con fundamento y ejecuta
+            con determinación, soy la opción que suma valor real desde el primer
+            día y evoluciona junto al proyecto."
+          </p>
+        </div>
+      </section>
+
+      <!-- Sección de Skills: listado visual de mis habilidades técnicas -->
+      <section class="skills" id="skills">
+        <h3 class="skills__title">Skills</h3>
+        <div class="skills__line">
+          <!-- Cada caja representa una skill con ícono y nombre -->
+          <div class="skills__box">
+            <ul>
+              <li class="skills__img">
+                <img src="assets/html-icon.png" alt="HTML 5" />
+              </li>
+              <li class="skills__name">HTML 5</li>
+            </ul>
+          </div>
+
+          <div class="skills__box">
+            <ul>
+              <li class="skills__img">
+                <img src="assets/css-icon.png" alt="CSS" />
+              </li>
+              <li class="skills__name">CSS</li>
+            </ul>
+          </div>
+
+          <div class="skills__box">
+            <ul>
+              <li class="skills__img">
+                <img src="assets/js-icon.png" alt="JavaScript" />
+              </li>
+              <li class="skills__name">Javascript</li>
+            </ul>
+          </div>
+
+          <div class="skills__box">
+            <ul>
+              <li class="skills__img">
+                <img src="assets/php-icon.png" alt="PHP" />
+              </li>
+              <li class="skills__name">PHP</li>
+            </ul>
+          </div>
+
+          <div class="skills__box">
+            <ul>
+              <li class="skills__img">
+                <img src="assets/nodejs.icon.png" alt="Node JS" />
+              </li>
+              <li class="skills__name">Node JS</li>
+            </ul>
+          </div>
+
+          <div class="skills__box">
+            <ul>
+              <li class="skills__img">
+                <img src="assets/react_icon.png" alt="React" />
+              </li>
+              <li class="skills__name">React</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- Sección de Hobbies: para mostrar intereses personales -->
+      <section class="hobbies" id="hobbies">
+        <h3 class="hobbies__title">Hobbies</h3>
+        <div class="hobbies__line">
+          <!-- Cada hobby tiene una tarjeta con cara frontal y reverso con descripción -->
+          <div class="hobbies__box">
+            <div class="hobbies__card">
+              <div class="hobbies__front">
+                <img src="assets/books_icon.png" alt="Leer" />
+                <p class="hobbies__name">Leer</p>
+              </div>
+              <div class="hobbies__back">
+                <p>
+                  Me encanta sumergirme en libros de desarrollo personal y
+                  tecnología.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="hobbies__box">
+            <div class="hobbies__card">
+              <div class="hobbies__front">
+                <img src="assets/chess-icon.png" alt="Ajedrez" />
+                <p class="hobbies__name">Ajedrez</p>
+              </div>
+              <div class="hobbies__back">
+                <p>
+                  Juego ajedrez para entrenar la mente y mejorar mi toma de
+                  decisiones.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="hobbies__box">
+            <div class="hobbies__card">
+              <div class="hobbies__front">
+                <img src="assets/gym-icon.png" alt="Gym" />
+                <p class="hobbies__name">Gym</p>
+              </div>
+              <div class="hobbies__back">
+                <p>
+                  Entrenar en el gimnasio me ayuda a mantener disciplina y
+                  enfoque.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="hobbies__box">
+            <div class="hobbies__card">
+              <div class="hobbies__front">
+                <img src="assets/kitchen_icon.png" alt="Cocinar" />
+                <p class="hobbies__name">Cocinar</p>
+              </div>
+              <div class="hobbies__back">
+                <p>
+                  Me gusta cocinar platos saludables y experimentar nuevas
+                  recetas.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="hobbies__box">
+            <div class="hobbies__card">
+              <div class="hobbies__front">
+                <img
+                  src="assets/social-networks-icon.png"
+                  alt="Redes Sociales"
+                />
+                <p class="hobbies__name">RRSS</p>
+              </div>
+              <div class="hobbies__back">
+                <p>
+                  Uso redes sociales para compartir ideas, aprender y conectar.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="hobbies__box">
+            <div class="hobbies__card">
+              <div class="hobbies__front">
+                <img src="assets/write_icon.png" alt="Escribir" />
+                <p class="hobbies__name">Escribir</p>
+              </div>
+              <div class="hobbies__back">
+                <p>
+                  Escribir me permite reflexionar y comunicar mis pensamientos
+                  con claridad.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Sección de Formación Académica con cursos y fechas -->
+      <section class="academic" id="formacion">
+        <h2 class="academic__title">Formación académica</h2>
+
+        <div class="academic__courses">
+          <!-- Cada caja representa un curso o certificación realizada -->
+          <div class="academic__courses__box">
+            <ul class="academic__courses__list">
+              <li class="academic__courses__item__img">
+                <img src="assets/alura_logo.png" alt="Alura" />
+              </li>
+              <li class="academic__courses__item__title">
+                <h4>Formación en Front-End Developer</h4>
+              </li>
+              <li class="academic__courses__item__subtitle">
+                <p>2024 - 2025</p>
+              </li>
+            </ul>
+          </div>
+
+          <div class="academic__courses__box">
+            <ul class="academic__courses__list">
+              <li class="academic__courses__item__img">
+                <img src="assets/udemy_logo.png" alt="Udemy" />
+              </li>
+              <li class="academic__courses__item__title">
+                <h4>Formación Front-End y Back-End</h4>
+              </li>
+              <li class="academic__courses__item__subtitle">
+                <p>2024 - En curso</p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- Sección de Experiencia Profesional o proyectos destacados -->
+      <section class="experience" id="xp">
+        <!-- Título principal para la sección de experiencia -->
+        <h2 class="experience__section__title">Experiencia Profesional</h2>
+
+        <!-- Cada caja representa un proyecto con carrusel de imágenes y enlaces -->
+        <div class="experiencie__box">
+          <!-- Carrusel de imágenes para mostrar pantallas o demos -->
+          <div class="experience__carousel">
+            <div class="carousel__track">
+              <img
+                class="carousel__img"
+                src="assets/ping_pong/ping-pong-1.webp"
+                alt="Ping Pong 1"
+              />
+              <img
+                class="carousel__img"
+                src="assets/ping_pong/ping-pong-2.webp"
+                alt="Ping Pong 2"
+              />
+              <img
+                class="carousel__img"
+                src="assets/ping_pong/ping-pong-3.webp"
+                alt="Ping Pong 3"
+              />
+            </div>
+          </div>
+
+          <div class="experience__info">
+            <h2 class="experience__title">Juego Ping Pong</h2>
+            <h3 class="experience__text">HTML, CSS, JavaScript</h3>
+            <div class="experience__description">
+              <!-- Botón al repositorio GitHub -->
+              <span class="experience__repo">
+                <a
+                  href="https://github.com/HeberPalacio/juego-ping-pong"
+                  target="_blank"
+                >
+                  <button class="experiencia__boton--repo">Repositório</button>
+                </a>
+              </span>
+              <!-- Botón para ver demo en vivo -->
+              <span class="experience__demo">
+                <a
+                  href="https://heberpalacio.github.io/juego-ping-pong/"
+                  target="_blank"
+                >
+                  <button class="experience__boton--demo">Ver demo</button>
+                </a>
+              </span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Proyecto 2: Landing Page para agencia de fotografía -->
+        <div class="experiencie__box">
+          <div class="experience__carousel">
+            <div class="carousel__track">
+              <img
+                class="carousel__img"
+                src="assets/limbika/limbiKa_1.webp"
+                alt="LimbiKa 1"
+              />
+              <img
+                class="carousel__img"
+                src="assets/limbika/limbiKa_2.webp"
+                alt="LimbiKa 2"
+              />
+              <img
+                class="carousel__img"
+                src="assets/limbika/limbiKa_3.webp"
+                alt="LimbiKa 3"
+              />
+              <img
+                class="carousel__img"
+                src="assets/limbika/limbiKa_4.webp"
+                alt="LimbiKa 4"
+              />
+              <img
+                class="carousel__img"
+                src="assets/limbika/limbiKa_5.webp"
+                alt="LimbiKa 5"
+              />
+              <img
+                class="carousel__img"
+                src="assets/limbika/limbiKa_6.webp"
+                alt="LimbiKa 6"
+              />
+              <img
+                class="carousel__img"
+                src="assets/limbika/limbiKa_7.webp"
+                alt="LimbiKa 7"
+              />
+              <img
+                class="carousel__img"
+                src="assets/limbika/limbiKa_8.webp"
+                alt="LimbiKa 8"
+              />
+            </div>
+          </div>
+          <div class="experience__info">
+            <h2 class="experience__title">LimbiKa - Fotografía</h2>
+            <h3 class="experience__text">HTML, SCSS, JavaScript</h3>
+            <div class="experience__description">
+              <span class="experience__repo">
+                <a
+                  href="https://github.com/HeberPalacio/limbika_agencia_de_fotografia"
+                  target="_blank"
+                >
+                  <button class="experiencia__boton--repo">Repositório</button>
+                </a>
+              </span>
+              <span class="experience__demo">
+                <a
+                  href="https://heberpalacio.github.io/limbika_agencia_de_fotografia/"
+                  target="_blank"
+                >
+                  <button class="experience__boton--demo">Ver demo</button>
+                </a>
+              </span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Proyecto 3: Dashboard con datos y estadísticas -->
+        <div class="experiencie__box">
+          <div class="experience__carousel">
+            <div class="carousel__track">
+              <img
+                class="carousel__img"
+                src="assets/avtic_pro/avtic_pro_1.webp"
+                alt="Avtic PRO 1"
+              />
+              <img
+                class="carousel__img"
+                src="assets/avtic_pro/avtic_pro_2.webp"
+                alt="Avtic PRO 2"
+              />
+              <img
+                class="carousel__img"
+                src="assets/avtic_pro/avtic_pro_3.webp"
+                alt="Avtic PRO 3"
+              />
+              <img
+                class="carousel__img"
+                src="assets/avtic_pro/avtic_pro_4.webp"
+                alt="Avtic PRO 4"
+              />
+              <img
+                class="carousel__img"
+                src="assets/avtic_pro/avtic_pro_5.webp"
+                alt="Avtic PRO 5"
+              />
+              <img
+                class="carousel__img"
+                src="assets/avtic_pro/avtic_pro_6.webp"
+                alt="Avtic PRO 6"
+              />
+              <img
+                class="carousel__img"
+                src="assets/avtic_pro/avtic_pro_7.webp"
+                alt="Avtic PRO 7"
+              />
+              <img
+                class="carousel__img"
+                src="assets/avtic_pro/avtic_pro_8.webp"
+                alt="Avtic PRO 8"
+              />
+              <img
+                class="carousel__img"
+                src="assets/avtic_pro/avtic_pro_9.webp"
+                alt="Avtic PRO 9"
+              />
+            </div>
+          </div>
+          <div class="experience__info">
+            <h2 class="experience__title">Avtic PRO - Dashboard</h2>
+            <h3 class="experience__text">HTML, SCSS, JavaScript</h3>
+            <div class="experience__description">
+              <span class="experience__repo">
+                <a
+                  href="https://github.com/HeberPalacio/dashboard_heber_palacio"
+                  target="_blank"
+                >
+                  <button class="experiencia__boton--repo">Repositório</button>
+                </a>
+              </span>
+              <span class="experience__demo">
+                <a
+                  href="https://heberpalacio.github.io/dashboard_heber_palacio/"
+                  target="_blank"
+                >
+                  <button class="experience__boton--demo">Ver demo</button>
+                </a>
+              </span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Sección final con una cita inspiradora para cerrar -->
+      <section class="quote-section" id="cita">
+        <div class="quote-container">
+          <p class="quote-text">
+            "Nunca es demasiado tarde para ser quien podrías haber sido."
+          </p>
+          <span class="quote-author">– George Eliot</span>
+        </div>
+      </section>
+
+      <!-- Footer con datos de autor y derechos -->
+      <footer class="footer">
+        <div class="footer__rodapie">
+          <p>Desarrollado por Heber Palacio</p>
+          <p>2025</p>
+        </div>
+      </footer>
+
+      <!-- Script principal para interactividad -->
+      <script src="script.js" defer></script>
+    </div>
+  </body>
+</html>

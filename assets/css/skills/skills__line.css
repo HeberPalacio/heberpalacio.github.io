@@ -1,0 +1,43 @@
+.skills__line {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 1rem;
+  width: 100%;
+  max-width: 1000px;
+}
+
+.skills__box {
+  width: calc(33.333% - 1rem);
+  height: 15rem;
+  padding: 1rem;
+  border: solid var(--color-ter);
+  border-radius: 1rem;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.skills__box ul {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.skills__img img {
+  width: 4rem;
+  height: auto;
+  object-fit: contain;
+}
+
+.skills__name {
+  font-weight: bold;
+  font-size: 1rem;
+  color: var(--color-pri);
+}

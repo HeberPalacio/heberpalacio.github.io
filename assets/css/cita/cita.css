@@ -1,0 +1,28 @@
+.quote-section {
+  background-color: var(--color-sec);
+  padding: 6rem 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: var(--color-pri);
+}
+
+.quote-container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.quote-text {
+  font-size: 2rem;
+  font-weight: bold;
+  line-height: 1.5;
+}
+
+.quote-author {
+  display: block;
+  margin-top: 1rem;
+  font-size: 1.2rem;
+  font-style: italic;
+  color: var(--color-ter);
+}

@@ -1,0 +1,70 @@
+.title__bio {
+  font-size: 4rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  line-height: 2rem;
+}
+
+.title__bio span {
+  color: var(--color-ter);
+}
+
+.title__subsection {
+  line-height: 1.5rem;
+  font-size: 1.3rem;
+  font-weight: 400;
+  margin-bottom: 1rem;
+  margin-right: 10rem;
+}
+
+.title__network {
+  list-style: none;
+  display: flex;
+  justify-content: end;
+  gap: 2rem;
+  margin-right: 9rem;
+}
+
+.social-icon {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  text-decoration: none;
+  cursor: pointer;
+  transition: transform 0.4s ease;
+}
+
+.social-icon img {
+  width: 40px;
+  height: 40px;
+  transition: transform 0.4s ease;
+}
+
+/* Tooltip */
+.tooltip {
+  position: absolute;
+  top: 50%;
+  left: 100%;
+  transform: translateX(0) translateY(-50%);
+  background-color: var(--color-ter);
+  color: var(--color-sec);
+  text-transform: uppercase;
+  padding: 5px 10px;
+  white-space: nowrap;
+  opacity: 0;
+  transition: transform 0.4s ease, opacity 0.4s ease;
+  border-radius: 5px;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+/* Mostrar tooltip */
+.social-icon:hover .tooltip {
+  opacity: 1;
+  transform: translateX(10px) translateY(-50%);
+}
+
+/* Desplazamiento en el hover */
+.icon-move {
+  transform: translateX(-75px);
+}

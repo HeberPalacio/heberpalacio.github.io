@@ -1,0 +1,28 @@
+.about__container {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  padding: 2rem;
+}
+
+.about__title {
+  display: flex;
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: var(--color-ter);
+  margin: 2rem 0;
+  justify-content: center;
+  font-style: italic;
+}
+
+.about__text {
+  max-width: 500px;
+}
+
+.about__paragraph {
+  line-height: 1.5rem;
+  font-size: 1.3rem;
+  font-weight: 400;
+  margin-bottom: 1rem;
+  color: var(--color-sec);
+}

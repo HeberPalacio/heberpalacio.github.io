@@ -1,0 +1,25 @@
+.menu__list,
+.menu-nav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 1rem;
+}
+
+.menu__list__item,
+.menu__list__item__contato {
+  color: var(--color-sec);
+}
+
+.menu__list__item a {
+  text-transform: uppercase;
+}
+
+.menu__list__item:hover,
+.menu__list__item__contato:hover {
+  color: var(--color-ter);
+}
+
+.menu__list__item__contato {
+  display: none;
+}
