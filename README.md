@@ -6,9 +6,7 @@ Este repositorio contiene el código fuente del sitio web personal y profesional
 
 ## Enlace al sitio web
 
-Puedes visitar el portafolio en línea aquí:
-
-[https://heberpalacio.github.io/portafolio-heber-palacio](heberpalacio.com)
+[CLICK PARA VER VISITAR MI PORTAFOLIO](http://heberpalacio.com)
 
 ---
 
